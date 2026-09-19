@@ -1,0 +1,911 @@
+/* ========================================
+   Fees Page
+======================================== */
+
+.fees-page {
+  width: 100%;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.fees-header {
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fees-header h1 {
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.fees-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.fees-header-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 11px;
+
+  background: #e9f9f2;
+
+  color: #1fa971;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   Fee Summary
+======================================== */
+
+.fee-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.fee-summary-card {
+  min-height: 96px;
+
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.fee-summary-icon {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-fee {
+  color: #6657e8;
+  background: #efedff;
+}
+
+.paid-fee {
+  color: #1fa971;
+  background: #e9f9f2;
+}
+
+.pending-fee {
+  color: #f59e0b;
+  background: #fff5df;
+}
+
+.fee-summary-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.fee-summary-content span {
+  color: #667085;
+
+  font-size: 12px;
+}
+
+.fee-summary-content strong {
+  color: #172033;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   Common Card
+======================================== */
+
+.fees-card {
+  margin-bottom: 20px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   Card Header
+======================================== */
+
+.fees-card-header {
+  margin-bottom: 22px;
+}
+
+.fees-title {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.fees-title-icon,
+.payment-title-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fees-title-icon {
+  background: #efedff;
+  color: #6657e8;
+}
+
+.payment-title-icon {
+  background: #e9f9f2;
+  color: #1fa971;
+}
+
+.fees-title h3 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fees-title p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   Fee Details
+======================================== */
+
+.fee-details-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fee-detail-item {
+  min-height: 82px;
+
+  padding: 15px 8px;
+
+  border-bottom: 1px solid #edf0f5;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(200px, 1.4fr)
+    1fr
+    1fr
+    1fr
+    130px
+    95px;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.fee-detail-item:last-child {
+  border-bottom: none;
+}
+
+
+/* ========================================
+   Fee Type
+======================================== */
+
+.fee-type {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.fee-type-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  background: #f3f1ff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fee-type h4 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fee-type span {
+  color: #8a94a6;
+
+  font-size: 10px;
+}
+
+
+/* ========================================
+   Fee Amount
+======================================== */
+
+.fee-amount {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.fee-amount span {
+  color: #8a94a6;
+
+  font-size: 10px;
+}
+
+.fee-amount strong {
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.paid-text {
+  color: #16845a !important;
+}
+
+.pending-text {
+  color: #b77900 !important;
+}
+
+
+/* ========================================
+   Due Date
+======================================== */
+
+.fee-due {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.fee-due span {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #8a94a6;
+
+  font-size: 10px;
+}
+
+.fee-due span svg {
+  color: #6657e8;
+}
+
+.fee-due strong {
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   Fee Status
+======================================== */
+
+.fee-status {
+  width: fit-content;
+
+  min-width: 78px;
+
+  padding: 6px 8px;
+
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.fee-status-paid {
+  color: #16845a;
+  background: #e9f9f2;
+}
+
+.fee-status-pending {
+  color: #b77900;
+  background: #fff5df;
+}
+
+.fee-status-overdue {
+  color: #c83e3e;
+  background: #fff0f0;
+}
+
+.fee-status-default {
+  color: #667085;
+  background: #f2f4f7;
+}
+
+
+/* ========================================
+   Payment Table
+======================================== */
+
+.payment-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.payment-table {
+  width: 100%;
+
+  min-width: 650px;
+
+  border-collapse: collapse;
+}
+
+.payment-table th {
+  padding: 12px 10px;
+
+  background: #f8f9fb;
+
+  border-bottom: 1px solid #edf0f5;
+
+  color: #667085;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+.payment-table td {
+  padding: 14px 10px;
+
+  border-bottom: 1px solid #edf0f5;
+
+  color: #344054;
+
+  font-size: 12px;
+}
+
+.payment-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.payment-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.transaction-id {
+  color: #5545dc;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.payment-amount {
+  color: #172033;
+
+  font-size: 12px;
+}
+
+.payment-success {
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  background: #e9f9f2;
+
+  color: #16845a;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 4px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   Empty States
+======================================== */
+
+.fees-empty,
+.payment-empty {
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.fees-empty-icon,
+.payment-empty-icon {
+  width: 58px;
+  height: 58px;
+
+  margin-bottom: 14px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fees-empty-icon {
+  background: #f3f1ff;
+  color: #6657e8;
+}
+
+.payment-empty-icon {
+  background: #e9f9f2;
+  color: #1fa971;
+}
+
+.fees-empty h4,
+.payment-empty h4 {
+  margin: 0 0 6px;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fees-empty p,
+.payment-empty p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 1200px) {
+
+  .fee-detail-item {
+    grid-template-columns:
+      1.4fr 1fr 1fr;
+
+    gap: 16px;
+  }
+
+  .fee-status {
+    justify-self: start;
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .fee-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .fee-detail-item {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 16px 4px;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .fees-header h1 {
+    font-size: 23px;
+  }
+
+  .fees-card {
+    padding: 16px;
+  }
+
+  .fee-detail-item {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* ========================================
+   FEES PAGE ENTRANCE
+======================================== */
+
+.fees-page {
+  animation: feesPageIn 0.7s ease forwards;
+}
+
+@keyframes feesPageIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   FEE SUMMARY CARDS ENTRANCE
+======================================== */
+
+.fee-summary-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: feeSummaryCardIn 0.7s ease forwards;
+}
+
+.fee-summary-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fee-summary-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.fee-summary-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes feeSummaryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   FEE SUMMARY CARDS HOVER
+======================================== */
+
+.fee-summary-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.fee-summary-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   FEE DETAILS CARD ENTRANCE
+======================================== */
+
+.fees-card:first-of-type {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: feeDetailsCardIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes feeDetailsCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   FEE DETAILS CARD HOVER
+======================================== */
+
+.fees-card:first-of-type {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.fees-card:first-of-type:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   INDIVIDUAL FEE ITEMS ENTRANCE
+======================================== */
+
+.fee-detail-item {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: feeDetailItemIn 0.5s ease forwards;
+}
+
+.fee-detail-item:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.fee-detail-item:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.fee-detail-item:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.fee-detail-item:nth-child(4) {
+  animation-delay: 1.1s;
+}
+
+.fee-detail-item:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.fee-detail-item:nth-child(6) {
+  animation-delay: 1.3s;
+}
+
+@keyframes feeDetailItemIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ========================================
+   INDIVIDUAL FEE ITEM HOVER
+======================================== */
+
+.fee-detail-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.fee-detail-item:hover {
+  transform: translateX(5px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   FEE TYPE ICON HOVER
+======================================== */
+
+.fee-type-icon {
+  transition: transform 0.3s ease;
+}
+
+.fee-detail-item:hover .fee-type-icon {
+  transform: scale(1.1) rotate(-4deg);
+}
+/* ========================================
+   FEE STATUS BADGE HOVER
+======================================== */
+
+.fee-status {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.fee-status:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   PAYMENT HISTORY CARD ENTRANCE
+======================================== */
+
+.fees-card.payment-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: paymentHistoryCardIn 0.8s ease forwards;
+  animation-delay: 1.3s;
+}
+
+@keyframes paymentHistoryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   PAYMENT HISTORY CARD HOVER
+======================================== */
+
+.fees-card.payment-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.fees-card.payment-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   PAYMENT TABLE ROWS ENTRANCE
+======================================== */
+
+.payment-table tbody tr {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: paymentRowIn 0.5s ease forwards;
+}
+
+.payment-table tbody tr:nth-child(1) {
+  animation-delay: 1.5s;
+}
+
+.payment-table tbody tr:nth-child(2) {
+  animation-delay: 1.6s;
+}
+
+.payment-table tbody tr:nth-child(3) {
+  animation-delay: 1.7s;
+}
+
+.payment-table tbody tr:nth-child(4) {
+  animation-delay: 1.8s;
+}
+
+.payment-table tbody tr:nth-child(5) {
+  animation-delay: 1.9s;
+}
+
+.payment-table tbody tr:nth-child(6) {
+  animation-delay: 2s;
+}
+
+@keyframes paymentRowIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ========================================
+   PAYMENT SUCCESS BADGE HOVER
+======================================== */
+
+.payment-success {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.payment-success:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   FEES EMPTY STATES ENTRANCE
+======================================== */
+
+.fees-empty,
+.payment-empty {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: feesEmptyIn 0.7s ease forwards;
+}
+
+.fees-empty {
+  animation-delay: 0.8s;
+}
+
+.payment-empty {
+  animation-delay: 1.5s;
+}
+
+@keyframes feesEmptyIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,751 @@
+/* ========================================
+   Announcements Page
+======================================== */
+
+.announcements-page {
+  width: 100%;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.announcements-header {
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.announcements-header h1 {
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.announcements-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.announcements-header-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 11px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   Summary
+======================================== */
+
+.announcement-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.announcement-summary-card {
+  min-height: 88px;
+
+  padding: 17px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.summary-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-icon.total {
+  background: #efedff;
+  color: #6657e8;
+}
+
+.summary-icon.college {
+  background: #ebf4ff;
+  color: #2f80ed;
+}
+
+.summary-icon.department {
+  background: #e9f9f2;
+  color: #1fa971;
+}
+
+.summary-icon.important {
+  background: #fff5df;
+  color: #f59e0b;
+}
+
+.announcement-summary-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.announcement-summary-card span {
+  color: #667085;
+
+  font-size: 12px;
+}
+
+.announcement-summary-card strong {
+  color: #172033;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   Main Card
+======================================== */
+
+.announcements-card {
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   Card Header
+======================================== */
+
+.announcements-card-header {
+  margin-bottom: 20px;
+}
+
+.announcements-title {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.announcements-title-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 10px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcements-title h3 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.announcements-title p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   Announcement List
+======================================== */
+
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* ========================================
+   Announcement Item
+======================================== */
+
+.announcement-card-item {
+  padding: 18px;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 10px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.announcement-card-item:hover {
+  border-color: #ded9ff;
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   Item Top
+======================================== */
+
+.announcement-item-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.announcement-item-title {
+  min-width: 0;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 11px;
+}
+
+.announcement-item-icon {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #f3f1ff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-item-title h4 {
+  margin: 2px 0 7px;
+
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   Category
+======================================== */
+
+.announcement-meta {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.announcement-category {
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 4px;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.category-college {
+  color: #2f6fca;
+  background: #ebf4ff;
+}
+
+.category-department {
+  color: #16845a;
+  background: #e9f9f2;
+}
+
+.category-academic {
+  color: #6657e8;
+  background: #efedff;
+}
+
+.category-default {
+  color: #667085;
+  background: #f2f4f7;
+}
+
+
+/* ========================================
+   Priority
+======================================== */
+
+.announcement-priority {
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 4px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.priority-important {
+  color: #b77900;
+  background: #fff5df;
+}
+
+.priority-urgent {
+  color: #c83e3e;
+  background: #fff0f0;
+}
+
+.priority-normal {
+  color: #16845a;
+  background: #e9f9f2;
+}
+
+.priority-default {
+  color: #667085;
+  background: #f2f4f7;
+}
+
+
+/* ========================================
+   Description
+======================================== */
+
+.announcement-description {
+  margin: 15px 0 13px;
+
+  padding-left: 47px;
+
+  color: #697386;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Bottom
+======================================== */
+
+.announcement-item-bottom {
+  padding-left: 47px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.announcement-item-bottom span {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+.announcement-item-bottom span svg {
+  color: #6657e8;
+}
+
+.announcement-item-bottom strong {
+  color: #667085;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
+/* ========================================
+   Empty State
+======================================== */
+
+.announcements-empty {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.announcements-empty-icon {
+  width: 60px;
+  height: 60px;
+
+  margin-bottom: 14px;
+
+  border-radius: 50%;
+
+  background: #f3f1ff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcements-empty h4 {
+  margin: 0 0 6px;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.announcements-empty p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 1100px) {
+
+  .announcement-summary {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .announcement-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .announcements-header h1 {
+    font-size: 23px;
+  }
+
+  .announcements-card {
+    padding: 16px;
+  }
+
+  .announcement-item-top {
+    flex-direction: column;
+  }
+
+  .announcement-description {
+    padding-left: 0;
+  }
+
+  .announcement-item-bottom {
+    padding-left: 0;
+  }
+
+}
+/* ========================================
+   ANNOUNCEMENTS PAGE ENTRANCE
+======================================== */
+
+.announcements-page {
+  animation: announcementsPageIn 0.7s ease forwards;
+}
+
+@keyframes announcementsPageIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   ANNOUNCEMENT SUMMARY CARDS ENTRANCE
+======================================== */
+
+.announcement-summary-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: announcementSummaryCardIn 0.7s ease forwards;
+}
+
+.announcement-summary-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.announcement-summary-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.announcement-summary-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.announcement-summary-card:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+@keyframes announcementSummaryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   ANNOUNCEMENT SUMMARY CARDS HOVER
+======================================== */
+
+.announcement-summary-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.announcement-summary-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   RECENT ANNOUNCEMENTS CARD ENTRANCE
+======================================== */
+
+.announcements-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: announcementsCardIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes announcementsCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   INDIVIDUAL ANNOUNCEMENT ITEMS ENTRANCE
+======================================== */
+
+.announcement-card-item {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: announcementItemIn 0.5s ease forwards;
+}
+
+.announcement-card-item:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.announcement-card-item:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.announcement-card-item:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.announcement-card-item:nth-child(4) {
+  animation-delay: 1.1s;
+}
+
+.announcement-card-item:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.announcement-card-item:nth-child(6) {
+  animation-delay: 1.3s;
+}
+
+@keyframes announcementItemIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ========================================
+   INDIVIDUAL ANNOUNCEMENT ITEM HOVER
+======================================== */
+
+.announcement-card-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.announcement-card-item:hover {
+  transform: translateX(5px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   ANNOUNCEMENT ICON HOVER
+======================================== */
+
+.announcement-item-icon {
+  transition: transform 0.3s ease;
+}
+
+.announcement-card-item:hover .announcement-item-icon {
+  transform: scale(1.1) rotate(-4deg);
+}
+/* ========================================
+   ANNOUNCEMENT CATEGORY BADGE HOVER
+======================================== */
+
+.announcement-category {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.announcement-category:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   ANNOUNCEMENT PRIORITY BADGE HOVER
+======================================== */
+
+.announcement-priority {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.announcement-priority:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   ANNOUNCEMENTS EMPTY STATE ENTRANCE
+======================================== */
+
+.announcements-empty {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: announcementsEmptyIn 0.7s ease forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes announcementsEmptyIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   RECENT ANNOUNCEMENTS CARD HOVER
+======================================== */
+
+.announcements-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.announcements-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}

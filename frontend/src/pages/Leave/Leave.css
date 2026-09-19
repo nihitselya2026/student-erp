@@ -1,0 +1,1608 @@
+/* ========================================
+   Leave Page
+======================================== */
+
+.leave-page {
+  width: 100%;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.leave-header {
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.leave-header h1 {
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.leave-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   Apply Button
+======================================== */
+
+.apply-leave-button {
+  height: 40px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #6657e8;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.apply-leave-button:hover {
+  background: #5545dc;
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   Summary
+======================================== */
+
+.leave-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.leave-summary-card {
+  min-height: 88px;
+
+  padding: 17px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.leave-summary-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leave-summary-icon.total {
+  background: #efedff;
+  color: #6657e8;
+}
+
+.leave-summary-icon.pending {
+  background: #fff5df;
+  color: #f59e0b;
+}
+
+.leave-summary-icon.approved {
+  background: #e9f9f2;
+  color: #1fa971;
+}
+
+.leave-summary-icon.rejected {
+  background: #fff0f0;
+  color: #e05252;
+}
+
+.leave-summary-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.leave-summary-card span {
+  color: #667085;
+
+  font-size: 12px;
+}
+
+.leave-summary-card strong {
+  color: #172033;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   Main Card
+======================================== */
+
+.leave-card {
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   Card Header
+======================================== */
+
+.leave-card-header {
+  margin-bottom: 20px;
+}
+
+.leave-title {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.leave-title-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 10px;
+
+  background: #efedff;
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leave-title h3 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.leave-title p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   Leave List
+======================================== */
+
+.leave-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ========================================
+   Leave Item
+======================================== */
+
+.leave-item {
+  min-height: 82px;
+
+  padding: 15px 8px;
+
+  border-bottom: 1px solid #edf0f5;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(180px, 1.3fr)
+    minmax(170px, 1.2fr)
+    minmax(150px, 1fr)
+    120px
+    95px;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.leave-item:last-child {
+  border-bottom: none;
+}
+
+
+/* ========================================
+   Leave Type
+======================================== */
+
+.leave-type {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  min-width: 0;
+}
+
+.leave-type-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  background: #f3f1ff;
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leave-type h4 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.leave-type span {
+  color: #8a94a6;
+
+  font-size: 10px;
+}
+
+
+/* ========================================
+   Date / Reason / Applied
+======================================== */
+
+.leave-date,
+.leave-reason,
+.leave-applied {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.leave-date span,
+.leave-reason span,
+.leave-applied span {
+  color: #8a94a6;
+
+  font-size: 10px;
+}
+
+.leave-date span {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+}
+
+.leave-date span svg {
+  color: #6657e8;
+}
+
+.leave-date strong,
+.leave-reason strong,
+.leave-applied strong {
+  overflow: hidden;
+
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* ========================================
+   Status
+======================================== */
+
+.leave-status {
+  width: fit-content;
+
+  min-width: 78px;
+
+  padding: 6px 8px;
+
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.leave-status-approved {
+  background: #e9f9f2;
+  color: #16845a;
+}
+
+.leave-status-pending {
+  background: #fff5df;
+  color: #b77900;
+}
+
+.leave-status-rejected {
+  background: #fff0f0;
+  color: #c83e3e;
+}
+
+.leave-status-default {
+  background: #f2f4f7;
+  color: #667085;
+}
+
+
+/* ========================================
+   Empty State
+======================================== */
+
+.leave-empty {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.leave-empty-icon {
+  width: 60px;
+  height: 60px;
+
+  margin-bottom: 14px;
+
+  border-radius: 50%;
+
+  background: #f3f1ff;
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leave-empty h4 {
+  margin: 0 0 6px;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.leave-empty p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 1150px) {
+
+  .leave-summary {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .leave-item {
+    grid-template-columns:
+      1.4fr 1fr 1fr;
+
+    gap: 16px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .leave-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .apply-leave-button {
+    width: 100%;
+  }
+
+  .leave-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .leave-header h1 {
+    font-size: 23px;
+  }
+
+  .leave-card {
+    padding: 16px;
+  }
+
+  .leave-item {
+    grid-template-columns: 1fr;
+
+    padding: 16px 4px;
+  }
+
+  .leave-status {
+    justify-self: start;
+  }
+
+}
+
+/* ========================================
+   Apply Leave Modal
+======================================== */
+
+.leave-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  padding: 20px;
+
+  background: rgba(15, 23, 42, 0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(2px);
+}
+
+
+/* ========================================
+   Modal
+======================================== */
+
+.leave-modal {
+  width: 100%;
+  max-width: 540px;
+
+  max-height: calc(100vh - 40px);
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 20px 60px rgba(15, 23, 42, 0.18);
+
+  animation: leaveModalOpen 0.2s ease;
+}
+
+@keyframes leaveModalOpen {
+
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+/* ========================================
+   Modal Header
+======================================== */
+
+.leave-modal-header {
+  padding: 20px 22px;
+
+  border-bottom: 1px solid #edf0f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.leave-modal-title {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.leave-modal-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leave-modal-title h2 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.leave-modal-title p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Close
+======================================== */
+
+.leave-modal-close {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #f5f6f8;
+
+  color: #667085;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.leave-modal-close:hover {
+  background: #eeeeF2;
+
+  color: #172033;
+}
+
+
+/* ========================================
+   Form
+======================================== */
+
+.leave-form {
+  padding: 22px;
+}
+
+.leave-form-group {
+  margin-bottom: 18px;
+
+  position: relative;
+}
+
+.leave-form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.leave-form-group label span {
+  margin-left: 3px;
+
+  color: #e05252;
+}
+
+
+/* ========================================
+   Inputs
+======================================== */
+
+.leave-form-group select,
+.leave-form-group input,
+.leave-form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dfe3ea;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #172033;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.leave-form-group select,
+.leave-form-group input {
+  height: 42px;
+
+  padding: 0 12px;
+}
+
+.leave-form-group select {
+  cursor: pointer;
+}
+
+.leave-form-group textarea {
+  min-height: 115px;
+
+  padding: 11px 12px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+.leave-form-group select:focus,
+.leave-form-group input:focus,
+.leave-form-group textarea:focus {
+  border-color: #6657e8;
+
+  box-shadow:
+    0 0 0 3px rgba(102, 87, 232, 0.09);
+}
+
+.leave-form-group input::placeholder,
+.leave-form-group textarea::placeholder {
+  color: #a0a8b5;
+}
+
+
+/* ========================================
+   Date Inputs
+======================================== */
+
+.date-input-wrapper {
+  position: relative;
+}
+
+.date-input-wrapper svg {
+  position: absolute;
+
+  left: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #6657e8;
+
+  pointer-events: none;
+}
+
+.date-input-wrapper input {
+  padding-left: 37px;
+}
+
+
+/* ========================================
+   Form Row
+======================================== */
+
+.leave-form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+}
+
+
+/* ========================================
+   Character Count
+======================================== */
+
+.leave-form-group small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+
+  text-align: right;
+}
+
+
+/* ========================================
+   Form Actions
+======================================== */
+
+.leave-form-actions {
+  padding-top: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+.leave-cancel-button,
+.leave-submit-button {
+  height: 40px;
+
+  padding: 0 15px;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.leave-cancel-button {
+  border: 1px solid #dfe3ea;
+
+  background: #ffffff;
+
+  color: #667085;
+}
+
+.leave-cancel-button:hover {
+  background: #f8f9fb;
+
+  border-color: #cfd4dc;
+}
+
+.leave-submit-button {
+  border: 1px solid #6657e8;
+
+  background: #6657e8;
+
+  color: #ffffff;
+}
+
+.leave-submit-button:hover {
+  background: #5545dc;
+
+  border-color: #5545dc;
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   Modal Responsive
+======================================== */
+
+@media (max-width: 600px) {
+
+  .leave-modal-overlay {
+    padding: 12px;
+  }
+
+  .leave-modal {
+    max-height: calc(100vh - 24px);
+
+    border-radius: 12px;
+  }
+
+  .leave-modal-header {
+    padding: 17px;
+  }
+
+  .leave-form {
+    padding: 17px;
+  }
+
+  .leave-form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .leave-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .leave-cancel-button,
+  .leave-submit-button {
+    width: 100%;
+  }
+
+}
+/* ========================================
+   LEAVE PAGE ENTRANCE
+======================================== */
+
+.leave-page {
+  animation: leavePageIn 0.7s ease forwards;
+}
+
+@keyframes leavePageIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE SUMMARY CARDS ENTRANCE
+======================================== */
+
+.leave-summary-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: leaveSummaryCardIn 0.7s ease forwards;
+}
+
+.leave-summary-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.leave-summary-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.leave-summary-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.leave-summary-card:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+@keyframes leaveSummaryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE SUMMARY CARDS HOVER
+======================================== */
+
+.leave-summary-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.leave-summary-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   LEAVE HISTORY CARD ENTRANCE
+======================================== */
+
+.leave-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: leaveHistoryCardIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes leaveHistoryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE HISTORY CARD HOVER
+======================================== */
+
+.leave-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.leave-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   LEAVE HISTORY CARD HOVER
+======================================== */
+
+.leave-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.leave-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   INDIVIDUAL LEAVE ITEMS ENTRANCE
+======================================== */
+
+.leave-item {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: leaveItemIn 0.5s ease forwards;
+}
+
+.leave-item:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.leave-item:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.leave-item:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.leave-item:nth-child(4) {
+  animation-delay: 1.1s;
+}
+
+.leave-item:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.leave-item:nth-child(6) {
+  animation-delay: 1.3s;
+}
+
+@keyframes leaveItemIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ========================================
+   INDIVIDUAL LEAVE ITEM HOVER
+======================================== */
+
+.leave-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.leave-item:hover {
+  transform: translateX(5px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   LEAVE TYPE ICON HOVER
+======================================== */
+
+.leave-type-icon {
+  transition: transform 0.3s ease;
+}
+
+.leave-item:hover .leave-type-icon {
+  transform: scale(1.1) rotate(-4deg);
+}
+/* ========================================
+   LEAVE STATUS BADGE HOVER
+======================================== */
+
+.leave-status {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leave-status:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LEAVE EMPTY STATE ENTRANCE
+======================================== */
+
+.leave-empty {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: leaveEmptyIn 0.7s ease forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes leaveEmptyIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE MODAL ENTRANCE
+======================================== */
+
+.leave-modal-overlay {
+  animation: leaveOverlayIn 0.3s ease forwards;
+}
+
+.leave-modal {
+  animation: leaveModalIn 0.4s ease forwards;
+}
+
+@keyframes leaveOverlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leaveModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* ========================================
+   LEAVE MODAL CLOSE BUTTON HOVER
+======================================== */
+
+.leave-modal-close {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leave-modal-close:hover {
+  transform: scale(1.08) rotate(4deg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LEAVE MODAL ACTION BUTTONS HOVER
+======================================== */
+
+.leave-cancel-button,
+.leave-submit-button {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leave-cancel-button:hover,
+.leave-submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.10);
+}
+/* ========================================
+   LEAVE MODAL ICON HOVER
+======================================== */
+
+.leave-modal-icon {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leave-modal-icon:hover {
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LEAVE FORM FIELDS ENTRANCE
+======================================== */
+
+.leave-form-group {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: leaveFormFieldIn 0.5s ease forwards;
+}
+
+.leave-form-group:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+.leave-form-group:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.leave-form-group:nth-child(3) {
+  animation-delay: 0.35s;
+}
+
+@keyframes leaveFormFieldIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE DATE INPUT HOVER
+======================================== */
+
+.date-input-wrapper {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.date-input-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+}
+/* ========================================
+   LEAVE FORM INPUT FOCUS
+======================================== */
+
+.leave-form input,
+.leave-form select,
+.leave-form textarea {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leave-form input:focus,
+.leave-form select:focus,
+.leave-form textarea:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LEAVE MODAL HEADER HOVER
+======================================== */
+
+.leave-modal-header {
+  transition: transform 0.25s ease;
+}
+
+.leave-modal-header:hover {
+  transform: translateX(3px);
+}
+
+.leave-modal-header h2 {
+  transition: transform 0.25s ease;
+}
+
+.leave-modal-header h2:hover {
+  transform: translateX(3px);
+}
+/* ========================================
+   LEAVE FORM GROUP HOVER
+======================================== */
+
+.leave-form-group {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leave-form-group:hover {
+  transform: translateX(3px);
+}
+/* ========================================
+   LEAVE SUBMIT BUTTON ACTIVE EFFECT
+======================================== */
+
+.leave-submit-button:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LEAVE MODAL OVERLAY POLISH
+======================================== */
+
+.leave-modal-overlay {
+  transition: background 0.3s ease;
+}
+
+.leave-modal-overlay:hover {
+  background: rgba(0, 0, 0, 0.45);
+}
+/* ========================================
+   LEAVE CANCEL BUTTON ACTIVE EFFECT
+======================================== */
+
+.leave-cancel-button:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LEAVE MODAL BACKDROP POLISH
+======================================== */
+
+.leave-modal-overlay {
+  backdrop-filter: blur(2px);
+}
+/* ========================================
+   LEAVE MODAL CLOSE BUTTON ACTIVE EFFECT
+======================================== */
+
+.leave-modal-close:active {
+  transform: scale(0.95);
+}
+/* ========================================
+   LEAVE MODAL ICON ENTRANCE
+======================================== */
+
+.leave-modal-icon {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: leaveModalIconIn 0.5s ease forwards;
+  animation-delay: 0.25s;
+}
+
+@keyframes leaveModalIconIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ========================================
+   LEAVE MODAL CLOSE ICON ROTATION
+======================================== */
+
+.leave-modal-close svg {
+  transition: transform 0.25s ease;
+}
+
+.leave-modal-close:hover svg {
+  transform: rotate(90deg);
+}
+/* ========================================
+   LEAVE FORM ACTIONS ENTRANCE
+======================================== */
+
+.leave-form-actions {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: leaveFormActionsIn 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes leaveFormActionsIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE MODAL HEADER ENTRANCE
+======================================== */
+
+.leave-modal-header {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: leaveModalHeaderIn 0.5s ease forwards;
+  animation-delay: 0.15s;
+}
+
+@keyframes leaveModalHeaderIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE MODAL CLOSE BUTTON ENTRANCE
+======================================== */
+
+.leave-modal-close {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: leaveCloseButtonIn 0.4s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes leaveCloseButtonIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ========================================
+   LEAVE MODAL CLOSE BUTTON POLISH
+======================================== */
+
+.leave-modal-close:hover {
+  transform: scale(1.08) rotate(4deg);
+}
+/* ========================================
+   LEAVE CLOSE BUTTON FINAL HOVER
+======================================== */
+
+.leave-modal-close:hover {
+  animation: none;
+  transform: scale(1.08) rotate(90deg);
+}
+/* ========================================
+   LEAVE MODAL CONTENT ENTRANCE
+======================================== */
+
+.leave-form {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: leaveFormIn 0.5s ease forwards;
+  animation-delay: 0.25s;
+}
+
+@keyframes leaveFormIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE MODAL CONTENT HOVER
+======================================== */
+
+.leave-form {
+  transition: transform 0.3s ease;
+}
+
+.leave-form:hover {
+  transform: translateY(-2px);
+}
+/* ========================================
+   LEAVE MODAL CONTENT HOVER
+======================================== */
+
+.leave-form {
+  transition: transform 0.3s ease;
+}
+
+.leave-form:hover {
+  transform: translateY(-2px);
+}
+/* ========================================
+   LEAVE MODAL FINAL POLISH
+======================================== */
+
+.leave-modal {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.leave-modal:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+/* ========================================
+   APPLY LEAVE BUTTON HOVER
+======================================== */
+
+.apply-leave-button {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.apply-leave-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.10);
+}
+/* ========================================
+   APPLY LEAVE BUTTON ACTIVE EFFECT
+======================================== */
+
+.apply-leave-button:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LEAVE HEADER ENTRANCE
+======================================== */
+
+.leave-header {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: leaveHeaderIn 0.7s ease forwards;
+  animation-delay: 0.15s;
+}
+
+@keyframes leaveHeaderIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   LEAVE HEADER TITLE HOVER
+======================================== */
+
+.leave-header h1 {
+  transition: transform 0.25s ease;
+}
+
+.leave-header h1:hover {
+  transform: translateX(4px);
+}
+/* ========================================
+   APPLY LEAVE BUTTON ENTRANCE
+======================================== */
+
+.apply-leave-button {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: applyLeaveButtonIn 0.6s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes applyLeaveButtonIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

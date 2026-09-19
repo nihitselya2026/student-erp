@@ -1,0 +1,946 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   Login Page
+======================================== */
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: #ffffff;
+}
+
+
+/* ========================================
+   Brand Section
+======================================== */
+
+.login-brand-section {
+  min-height: 100vh;
+
+  padding: 60px;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(132, 112, 255, 0.32),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      #101c38,
+      #17274c 55%,
+      #29236d
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.login-brand-section::before,
+.login-brand-section::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.login-brand-section::before {
+  width: 360px;
+  height: 360px;
+
+  right: -120px;
+  top: -80px;
+}
+
+.login-brand-section::after {
+  width: 280px;
+  height: 280px;
+
+  left: -100px;
+  bottom: -100px;
+}
+
+.login-brand-content {
+  width: 100%;
+  max-width: 470px;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.login-brand-logo {
+  width: 62px;
+  height: 62px;
+
+  margin-bottom: 24px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(8px);
+}
+
+.login-brand-content h1 {
+  margin: 0 0 14px;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  letter-spacing: -1px;
+}
+
+.login-brand-content p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.76);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Decoration
+======================================== */
+
+.login-brand-decoration {
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.login-brand-decoration span {
+  display: block;
+
+  height: 6px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.login-brand-decoration span:nth-child(1) {
+  width: 55px;
+}
+
+.login-brand-decoration span:nth-child(2) {
+  width: 24px;
+}
+
+.login-brand-decoration span:nth-child(3) {
+  width: 10px;
+}
+
+
+/* ========================================
+   Form Section
+======================================== */
+
+.login-form-section {
+  min-height: 100vh;
+
+  padding: 50px 60px;
+
+  background: #f8f9fc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+}
+
+
+/* ========================================
+   Mobile Logo
+======================================== */
+
+.login-mobile-logo {
+  display: none;
+
+  margin-bottom: 35px;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #172033;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.login-mobile-logo-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 10px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   Heading
+======================================== */
+
+.login-heading {
+  margin-bottom: 30px;
+}
+
+.login-heading h2 {
+  margin: 0 0 8px;
+
+  color: #172033;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.login-heading p {
+  margin: 0;
+
+  color: #7b8495;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   Form
+======================================== */
+
+.login-form-group {
+  margin-bottom: 19px;
+}
+
+.login-form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   Input
+======================================== */
+
+.login-input-wrapper {
+  height: 48px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.login-input-wrapper > svg {
+  position: absolute;
+
+  left: 14px;
+
+  color: #98a2b3;
+
+  pointer-events: none;
+}
+
+.login-input-wrapper input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 45px 0 43px;
+
+  border: 1px solid #dfe3ea;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #172033;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-input-wrapper input::placeholder {
+  color: #a5adba;
+}
+
+.login-input-wrapper input:focus {
+  border-color: #6657e8;
+
+  box-shadow:
+    0 0 0 3px rgba(102, 87, 232, 0.09);
+}
+
+
+/* ========================================
+   Password
+======================================== */
+
+.login-password-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.forgot-password-button {
+  margin-bottom: 8px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #6657e8;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.forgot-password-button:hover {
+  color: #5545dc;
+}
+
+.password-visibility-button {
+  position: absolute;
+
+  right: 8px;
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #98a2b3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.password-visibility-button:hover {
+  background: #f5f6f8;
+
+  color: #6657e8;
+}
+
+
+/* ========================================
+   Error
+======================================== */
+
+.login-error {
+  margin: -4px 0 17px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #ffd8d8;
+
+  border-radius: 7px;
+
+  background: #fff4f4;
+
+  color: #c83e3e;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Submit
+======================================== */
+
+.login-submit-button {
+  width: 100%;
+  height: 48px;
+
+  margin-top: 4px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: linear-gradient(
+    135deg,
+    #6657e8,
+    #5545dc
+  );
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 22px rgba(86, 69, 220, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-submit-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 26px rgba(86, 69, 220, 0.28);
+}
+
+
+/* ========================================
+   Help
+======================================== */
+
+.login-help {
+  margin-top: 28px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e7eaf0;
+
+  text-align: center;
+}
+
+.login-help p {
+  margin: 0 0 5px;
+
+  color: #667085;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.login-help span {
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 900px) {
+
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-brand-section {
+    display: none;
+  }
+
+  .login-form-section {
+    padding: 35px 20px;
+  }
+
+  .login-mobile-logo {
+    display: flex;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .login-form-section {
+    align-items: flex-start;
+
+    padding-top: 45px;
+  }
+
+  .login-heading h2 {
+    font-size: 26px;
+  }
+
+}
+/* =========================
+   SIGN UP LINK
+   ========================= */
+
+.login-signup-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.login-signup-link span {
+  color: #374151;
+}
+
+.login-signup-link button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-signup-link button:hover {
+  color: #4338ca;
+  text-decoration: underline;
+}
+
+/* ========================================
+   PREMIUM LOGIN ANIMATIONS
+======================================== */
+
+/* Main brand content entrance */
+.login-animate-brand {
+  animation: loginBrandReveal 0.9s ease-out both;
+}
+
+/* Right side container entrance */
+.login-animate-container {
+  animation: loginContainerReveal 0.8s ease-out both;
+}
+
+/* Heading entrance */
+.login-animate-heading {
+  animation: loginHeadingReveal 0.7s ease-out 0.15s both;
+}
+
+
+/* Form entrance */
+.login-animate-form {
+  animation: loginFormReveal 0.7s ease-out 0.25s both;
+}
+
+
+/* ========================================
+   Brand Logo Animation
+======================================== */
+
+.login-brand-logo {
+  animation: loginLogoFloat 4s ease-in-out infinite;
+}
+
+
+/* ========================================
+   Background Decorative Circles
+======================================== */
+
+.login-brand-section::before {
+  animation: loginCircleOne 8s ease-in-out infinite alternate;
+}
+
+.login-brand-section::after {
+  animation: loginCircleTwo 7s ease-in-out infinite alternate;
+}
+
+
+/* ========================================
+   Decoration Animation
+======================================== */
+
+.login-brand-decoration span {
+  animation: loginDecorationPulse 2.4s ease-in-out infinite;
+}
+
+.login-brand-decoration span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.login-brand-decoration span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+
+/* ========================================
+   Input Micro Interaction
+======================================== */
+
+.login-input-wrapper input {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.login-input-wrapper input:focus {
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   Input Icon Interaction
+======================================== */
+
+.login-input-wrapper > svg {
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.login-input-wrapper:focus-within > svg {
+  color: #6657e8;
+  transform: scale(1.08);
+}
+
+
+/* ========================================
+   Password Button
+======================================== */
+
+.password-visibility-button {
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.password-visibility-button:hover {
+  transform: scale(1.05);
+}
+
+
+/* ========================================
+   Forgot Password
+======================================== */
+
+.forgot-password-button {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.forgot-password-button:hover {
+  transform: translateX(1px);
+}
+
+
+/* ========================================
+   Login Button
+======================================== */
+
+.login-submit-button {
+  position: relative;
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.login-submit-button::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.20),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: left 0.6s ease;
+}
+
+.login-submit-button:hover::before {
+  left: 140%;
+}
+
+.login-submit-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(86, 69, 220, 0.32);
+}
+
+.login-submit-button:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.login-submit-button svg {
+  transition:
+    transform 0.25s ease;
+}
+
+.login-submit-button:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* ========================================
+   Signup Link
+======================================== */
+
+.login-signup-link button {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.login-signup-link button:hover {
+  transform: translateX(2px);
+}
+
+
+/* ========================================
+   Error Animation
+======================================== */
+
+.login-error {
+  animation: loginErrorReveal 0.35s ease-out both;
+}
+
+
+/* ========================================
+   KEYFRAMES
+======================================== */
+
+@keyframes loginBrandReveal {
+
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+@keyframes loginContainerReveal {
+
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+@keyframes loginHeadingReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes loginFormReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes loginLogoFloat {
+
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+}
+
+
+@keyframes loginCircleOne {
+
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(-25px, 25px) scale(1.08);
+  }
+
+}
+
+
+@keyframes loginCircleTwo {
+
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(25px, -20px) scale(1.06);
+  }
+
+}
+
+
+@keyframes loginDecorationPulse {
+
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scaleX(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1.08);
+  }
+
+}
+
+
+@keyframes loginErrorReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ========================================
+   Reduced Motion Accessibility
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .login-animate-brand,
+  .login-animate-container,
+  .login-animate-heading,
+  .login-animate-form,
+  .login-brand-logo,
+  .login-brand-section::before,
+  .login-brand-section::after,
+  .login-brand-decoration span,
+  .login-error {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+
+}

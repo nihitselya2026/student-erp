@@ -1,0 +1,2091 @@
+.dashboard-page {
+  width: 100%;
+}
+
+/* ========================================
+   Dashboard Header
+======================================== */
+
+.dashboard-header {
+  margin-bottom: 26px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 6px;
+  color: #14213d;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ========================================
+   Statistics
+======================================== */
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.stat-card {
+  min-height: 132px;
+  padding: 20px;
+
+  background: #ffffff;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+}
+
+/* ========================================
+   Stat Icons
+======================================== */
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.semester-icon {
+  color: #6657e8;
+  background: #efedff;
+}
+
+.cgpa-icon {
+  color: #1fa971;
+  background: #e9f9f2;
+}
+
+.attendance-icon {
+  color: #2f80ed;
+  background: #ebf4ff;
+}
+
+.assignment-icon {
+  color: #f59e0b;
+  background: #fff5df;
+}
+
+/* ========================================
+   Stat Content
+======================================== */
+
+.stat-content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  color: #667085;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.stat-content h2 {
+  margin: 5px 0 4px;
+
+  color: #111827;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.stat-description {
+  color: #8a94a6;
+  font-size: 12px;
+}
+
+/* ========================================
+   Middle Section
+======================================== */
+
+.dashboard-middle {
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* ========================================
+   Common Card
+======================================== */
+
+.dashboard-card {
+  background: #ffffff;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+
+  padding: 22px;
+
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.card-header h3 {
+  margin: 0;
+
+  color: #172033;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-title svg {
+  color: #f5a623;
+}
+
+/* ========================================
+   Attendance
+======================================== */
+
+.attendance-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+
+  min-height: 185px;
+}
+
+/* Attendance Circle */
+
+.attendance-circle {
+  width: 145px;
+  height: 145px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #22b573 0deg,
+    #22b573 0deg,
+    #e9eef4 0deg,
+    #e9eef4 360deg
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.attendance-circle-inner {
+  width: 112px;
+  height: 112px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendance-circle-inner strong {
+  color: #172033;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.attendance-circle-inner span {
+  margin-top: 3px;
+
+  color: #8a94a6;
+  font-size: 12px;
+}
+
+/* Attendance Details */
+
+.attendance-details {
+  min-width: 190px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.attendance-detail {
+  display: grid;
+  grid-template-columns: 10px 1fr auto;
+
+  align-items: center;
+  gap: 8px;
+
+  color: #596579;
+  font-size: 13px;
+}
+
+.attendance-detail strong {
+  color: #172033;
+  font-size: 13px;
+}
+
+.detail-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+}
+
+.total-dot {
+  background: #5279df;
+}
+
+.present-dot {
+  background: #22b573;
+}
+
+.absent-dot {
+  background: #f59b45;
+}
+
+.percentage-dot {
+  background: #22b573;
+}
+
+/* ========================================
+   Card Action
+======================================== */
+
+.card-action {
+  width: 100%;
+  height: 38px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #f2f0ff;
+  color: #5545dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: background 0.2s ease;
+}
+
+.card-action:hover {
+  background: #e9e6ff;
+}
+
+/* ========================================
+   View All
+======================================== */
+
+.view-all-button {
+  border: none;
+  background: transparent;
+
+  color: #5545dc;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.view-all-button:hover {
+  color: #4031c4;
+}
+
+/* ========================================
+   Announcements
+======================================== */
+
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.announcement-item {
+  display: flex;
+  gap: 13px;
+}
+
+.announcement-dot {
+  width: 11px;
+  height: 11px;
+
+  flex-shrink: 0;
+
+  margin-top: 4px;
+
+  border-radius: 50%;
+
+  background: #6556e8;
+}
+
+.announcement-content h4 {
+  margin: 0 0 5px;
+
+  color: #172033;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.announcement-content p {
+  margin: 0 0 5px;
+
+  color: #697386;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.announcement-content span {
+  color: #9aa3b2;
+  font-size: 11px;
+}
+
+/* ========================================
+   Empty State
+======================================== */
+
+.empty-state {
+  min-height: 185px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.empty-icon {
+  width: 46px;
+  height: 46px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #f3f1ff;
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state h4 {
+  margin: 0 0 5px;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.empty-state p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+}
+
+/* ========================================
+   Bottom Section
+======================================== */
+
+.dashboard-bottom {
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+
+  gap: 20px;
+}
+
+/* ========================================
+   Upcoming Classes
+======================================== */
+
+.class-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.class-item {
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 8px 4px;
+}
+
+.class-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #efedff;
+  color: #6556e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-info {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.class-info h4 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.class-info span {
+  color: #7b8494;
+  font-size: 11px;
+}
+
+.class-room {
+  min-width: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 4px;
+}
+
+.class-room span {
+  color: #4f5b6d;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.class-room small {
+  color: #8d96a5;
+  font-size: 10px;
+}
+
+/* ========================================
+   Pending Assignments
+======================================== */
+
+.assignment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.assignment-item {
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 8px 4px;
+}
+
+.assignment-icon-small {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #f1edff;
+  color: #6557e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assignment-info {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.assignment-info h4 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.assignment-info span {
+  color: #8a94a6;
+  font-size: 10px;
+}
+
+/* ========================================
+   Assignment Status
+======================================== */
+
+.assignment-status {
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.assignment-status.pending {
+  background: #fff4dc;
+  color: #d99100;
+}
+
+.assignment-status.overdue {
+  background: #ffeded;
+  color: #ef4444;
+}
+
+.assignment-status.submitted {
+  background: #e8f8ef;
+  color: #20a464;
+}
+
+/* ========================================
+   Bottom Empty State
+======================================== */
+
+.bottom-empty-state {
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.bottom-empty-icon {
+  width: 46px;
+  height: 46px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #f3f1ff;
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-empty-state h4 {
+  margin: 0 0 5px;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bottom-empty-state p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+}
+
+/* ========================================
+   Responsive - Tablet
+======================================== */
+
+@media (max-width: 1200px) {
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-middle {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   Responsive - Mobile
+======================================== */
+
+@media (max-width: 700px) {
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .dashboard-header p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .dashboard-card {
+    padding: 18px;
+  }
+
+  .card-header {
+    margin-bottom: 18px;
+  }
+
+  .card-header h3 {
+    font-size: 15px;
+  }
+
+  .attendance-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .attendance-details {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .class-room {
+    display: none;
+  }
+
+  .assignment-status {
+    padding: 4px 8px;
+  }
+}
+
+/* ========================================
+   Responsive - Small Mobile
+======================================== */
+
+@media (max-width: 420px) {
+
+  .dashboard-header {
+    margin-bottom: 20px;
+  }
+
+  .stat-card {
+    min-height: 115px;
+    padding: 16px;
+  }
+
+  .stat-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stat-content h2 {
+    font-size: 22px;
+  }
+
+  .dashboard-card {
+    padding: 16px;
+  }
+
+  .attendance-circle {
+    width: 130px;
+    height: 130px;
+  }
+
+  .attendance-circle-inner {
+    width: 100px;
+    height: 100px;
+  }
+
+  .attendance-circle-inner strong {
+    font-size: 22px;
+  }
+
+  .assignment-item {
+    gap: 8px;
+  }
+
+  .assignment-icon-small {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* ========================================
+   Quick Access
+======================================== */
+
+.quick-access-section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-heading h3 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 12px;
+}
+
+/* Quick Access Grid */
+
+.quick-access-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+/* Quick Access Card */
+
+.quick-access-card {
+  width: 100%;
+  min-height: 78px;
+
+  padding: 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.quick-access-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #ddd9ff;
+
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+}
+
+/* Quick Access Icons */
+
+.quick-access-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendance-quick-icon {
+  color: #2f80ed;
+  background: #ebf4ff;
+}
+
+.academics-quick-icon {
+  color: #6657e8;
+  background: #efedff;
+}
+
+.timetable-quick-icon {
+  color: #e08a19;
+  background: #fff4df;
+}
+
+.assignments-quick-icon {
+  color: #20a464;
+  background: #e9f9f1;
+}
+
+.exams-quick-icon {
+  color: #d6538c;
+  background: #fcecf4;
+}
+
+.fees-quick-icon {
+  color: #7b61c9;
+  background: #f1edff;
+}
+
+/* Quick Access Content */
+
+.quick-access-content {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.quick-access-content h4 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.quick-access-content span {
+  color: #8a94a6;
+
+  font-size: 10px;
+}
+
+/* Arrow */
+
+.quick-access-arrow {
+  flex-shrink: 0;
+
+  color: #a1a9b6;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.quick-access-card:hover .quick-access-arrow {
+  color: #6556e8;
+
+  transform: translateX(3px);
+}
+
+/* ========================================
+   MOBILE DASHBOARD RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+  /* ----------------------------------------
+     Dashboard Page
+  ---------------------------------------- */
+
+  .dashboard-page {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* ----------------------------------------
+     Dashboard Header
+  ---------------------------------------- */
+
+  .dashboard-header {
+    margin-bottom: 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 23px;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+  }
+
+  .dashboard-header p {
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+
+  /* ----------------------------------------
+     Statistics
+  ---------------------------------------- */
+
+  .dashboard-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+
+  .stat-card {
+    width: 100%;
+    min-height: 115px;
+    padding: 15px;
+    gap: 12px;
+    box-sizing: border-box;
+    border-radius: 11px;
+  }
+
+
+  .stat-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 9px;
+    flex-shrink: 0;
+  }
+
+
+  .stat-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  .stat-content {
+    min-width: 0;
+  }
+
+
+  .stat-label {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+
+  .stat-content h2 {
+    margin: 4px 0 3px;
+    font-size: 21px;
+  }
+
+
+  .stat-description {
+    font-size: 10px;
+  }
+
+
+  /* ----------------------------------------
+     Middle Section
+  ---------------------------------------- */
+
+  .dashboard-middle {
+    width: 100%;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+  /* ----------------------------------------
+     Common Dashboard Cards
+  ---------------------------------------- */
+
+  .dashboard-card {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+    border-radius: 11px;
+  }
+
+
+  .card-header {
+    margin-bottom: 18px;
+  }
+
+
+  .card-header h3 {
+    font-size: 15px;
+  }
+
+
+  .card-title {
+    gap: 8px;
+  }
+
+
+  .card-title svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  .view-all-button {
+    font-size: 11px;
+  }
+
+
+  /* ----------------------------------------
+     Attendance Overview
+  ---------------------------------------- */
+
+  .attendance-content {
+    width: 100%;
+    min-height: auto;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+
+  .attendance-circle {
+    width: 135px;
+    height: 135px;
+  }
+
+
+  .attendance-circle-inner {
+    width: 104px;
+    height: 104px;
+  }
+
+
+  .attendance-circle-inner strong {
+    font-size: 22px;
+  }
+
+
+  .attendance-circle-inner span {
+    font-size: 11px;
+  }
+
+
+  .attendance-details {
+    width: 100%;
+    min-width: 0;
+    gap: 13px;
+  }
+
+
+  .attendance-detail {
+    grid-template-columns: 10px 1fr auto;
+    font-size: 12px;
+  }
+
+
+  .attendance-detail strong {
+    font-size: 12px;
+  }
+
+
+  /* ----------------------------------------
+     Card Action
+  ---------------------------------------- */
+
+  .card-action {
+    margin-top: 18px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+
+  /* ----------------------------------------
+     Empty State
+  ---------------------------------------- */
+
+  .empty-state {
+    min-height: 170px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+  }
+
+
+  .empty-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+  }
+
+
+  .empty-state h4 {
+    font-size: 12px;
+  }
+
+
+  .empty-state p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+
+  /* ----------------------------------------
+     Lower Dashboard Grid
+  ---------------------------------------- */
+
+  .dashboard-lower-grid {
+    width: 100%;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+  /* ----------------------------------------
+     Dashboard Lists
+  ---------------------------------------- */
+
+  .dashboard-list {
+    width: 100%;
+  }
+
+
+  .dashboard-list-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  /* ----------------------------------------
+     Announcements
+  ---------------------------------------- */
+
+  .announcement-list {
+    gap: 16px;
+  }
+
+
+  .announcement-item {
+    gap: 10px;
+  }
+
+
+  .announcement-dot {
+    width: 9px;
+    height: 9px;
+    margin-top: 4px;
+  }
+
+
+  .announcement-content {
+    min-width: 0;
+  }
+
+
+  .announcement-content h4 {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+
+  .announcement-content p {
+    font-size: 11px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+
+  .announcement-content span {
+    font-size: 10px;
+  }
+
+
+  /* ----------------------------------------
+     Quick Access
+  ---------------------------------------- */
+
+  .quick-access-section {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+
+  .quick-access-header {
+    margin-bottom: 14px;
+  }
+
+
+  .quick-access-header h3 {
+    font-size: 16px;
+  }
+
+
+  .quick-access-header p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+
+  .quick-access-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+
+  .quick-access-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 105px;
+    padding: 14px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  .quick-access-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+
+
+  .quick-access-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+
+  .quick-access-content {
+    min-width: 0;
+    flex: 1;
+  }
+
+
+  .quick-access-content strong {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+
+  .quick-access-content span {
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+
+  .quick-access-arrow {
+    display: none;
+  }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+  .dashboard-content {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+
+  /* Statistics */
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+
+  .stat-card {
+    min-height: 92px;
+    padding: 14px;
+  }
+
+
+  .stat-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+
+  .stat-content h2 {
+    font-size: 22px;
+  }
+
+
+  .stat-description {
+    font-size: 10px;
+  }
+
+
+  /* Dashboard Header */
+
+  .dashboard-header h1 {
+    font-size: 21px;
+  }
+
+
+  .dashboard-header p {
+    font-size: 12px;
+  }
+
+
+  /* Cards */
+
+  .dashboard-card {
+    padding: 16px;
+  }
+
+
+  /* Attendance */
+
+  .attendance-circle {
+    width: 125px;
+    height: 125px;
+  }
+
+
+  .attendance-circle-inner {
+    width: 96px;
+    height: 96px;
+  }
+
+
+  /* Quick Access */
+
+  .quick-access-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+
+  .quick-access-card {
+    min-height: 75px;
+    padding: 13px;
+  }
+
+
+  .quick-access-arrow {
+    display: block;
+    flex-shrink: 0;
+  }
+
+}
+/* ========================================
+   PREMIUM DASHBOARD ANIMATIONS
+======================================== */
+
+/* ----------------------------------------
+   Main Page Entrance
+---------------------------------------- */
+
+.dashboard-animate-page {
+  animation: dashboardPageReveal 0.7s ease-out both;
+}
+
+
+/* ----------------------------------------
+   Header Entrance
+---------------------------------------- */
+
+.dashboard-animate-header {
+  animation: dashboardHeaderReveal 0.65s ease-out 0.05s both;
+}
+
+
+/* ----------------------------------------
+   Statistics Cards
+---------------------------------------- */
+
+.dashboard-animate-stats {
+  animation: dashboardStatsReveal 0.6s ease-out 0.12s both;
+}
+
+
+/* Individual stat card animation */
+
+.dashboard-stat-card-1 {
+  animation: dashboardCardReveal 0.55s ease-out 0.15s both;
+}
+
+.dashboard-stat-card-2 {
+  animation: dashboardCardReveal 0.55s ease-out 0.25s both;
+}
+
+.dashboard-stat-card-3 {
+  animation: dashboardCardReveal 0.55s ease-out 0.35s both;
+}
+
+.dashboard-stat-card-4 {
+  animation: dashboardCardReveal 0.55s ease-out 0.45s both;
+}
+
+
+/* ----------------------------------------
+   Stat Card Hover
+---------------------------------------- */
+
+.stat-card {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #e2defd;
+
+  box-shadow:
+    0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+
+/* ----------------------------------------
+   Stat Icons
+---------------------------------------- */
+
+.stat-icon {
+  transition:
+    transform 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.08) rotate(2deg);
+}
+
+
+/* ----------------------------------------
+   Middle Cards
+---------------------------------------- */
+
+.dashboard-animate-middle {
+  animation: dashboardSectionReveal 0.65s ease-out 0.55s both;
+}
+
+.dashboard-content-card-1 {
+  animation: dashboardCardReveal 0.6s ease-out 0.6s both;
+}
+
+.dashboard-content-card-2 {
+  animation: dashboardCardReveal 0.6s ease-out 0.72s both;
+}
+
+
+/* ----------------------------------------
+   Lower Cards
+---------------------------------------- */
+
+.dashboard-animate-lower {
+  animation: dashboardSectionReveal 0.65s ease-out 0.82s both;
+}
+
+.dashboard-content-card-3 {
+  animation: dashboardCardReveal 0.6s ease-out 0.88s both;
+}
+
+.dashboard-content-card-4 {
+  animation: dashboardCardReveal 0.6s ease-out 1s both;
+}
+
+
+/* ----------------------------------------
+   Quick Access
+---------------------------------------- */
+
+.dashboard-animate-quick {
+  animation: dashboardSectionReveal 0.65s ease-out 1.08s both;
+}
+
+
+/* ----------------------------------------
+   Quick Access Cards
+---------------------------------------- */
+
+.quick-access-animated {
+  animation: quickAccessReveal 0.55s ease-out both;
+}
+
+.quick-access-animated:nth-child(1) {
+  animation-delay: 1.15s;
+}
+
+.quick-access-animated:nth-child(2) {
+  animation-delay: 1.23s;
+}
+
+.quick-access-animated:nth-child(3) {
+  animation-delay: 1.31s;
+}
+
+.quick-access-animated:nth-child(4) {
+  animation-delay: 1.39s;
+}
+
+.quick-access-animated:nth-child(5) {
+  animation-delay: 1.47s;
+}
+
+.quick-access-animated:nth-child(6) {
+  animation-delay: 1.55s;
+}
+
+
+/* ----------------------------------------
+   Dashboard Card Hover
+---------------------------------------- */
+
+.dashboard-card {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #e5e1ff;
+
+  box-shadow:
+    0 10px 28px rgba(15, 23, 42, 0.07);
+}
+
+
+/* ----------------------------------------
+   Attendance Circle
+---------------------------------------- */
+
+.attendance-circle {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.attendance-card:hover .attendance-circle {
+  transform: scale(1.05);
+
+  box-shadow:
+    0 8px 24px rgba(34, 181, 115, 0.12);
+}
+
+
+/* ----------------------------------------
+   Attendance Details
+---------------------------------------- */
+
+.attendance-detail {
+  transition:
+    transform 0.22s ease;
+}
+
+.attendance-detail:hover {
+  transform: translateX(4px);
+}
+
+
+/* ----------------------------------------
+   Announcement Items
+---------------------------------------- */
+
+.announcement-item {
+  transition:
+    transform 0.22s ease;
+}
+
+.announcement-item:hover {
+  transform: translateX(4px);
+}
+
+.announcement-dot {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.announcement-item:hover .announcement-dot {
+  transform: scale(1.2);
+
+  box-shadow:
+    0 0 0 4px rgba(101, 86, 232, 0.08);
+}
+
+
+/* ----------------------------------------
+   Buttons
+---------------------------------------- */
+
+.card-action {
+  transition:
+    background 0.22s ease,
+    transform 0.22s ease;
+}
+
+.card-action:hover {
+  transform: translateY(-1px);
+}
+
+.card-action svg {
+  transition:
+    transform 0.22s ease;
+}
+
+.card-action:hover svg {
+  transform: translateX(4px);
+}
+
+
+.view-all-button {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.view-all-button:hover {
+  transform: translateX(2px);
+}
+
+
+/* ----------------------------------------
+   Quick Access Hover
+---------------------------------------- */
+
+.quick-access-card {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.quick-access-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 26px rgba(15, 23, 42, 0.08);
+}
+
+.quick-access-icon {
+  transition:
+    transform 0.28s ease;
+}
+
+.quick-access-card:hover .quick-access-icon {
+  transform: scale(1.08);
+}
+
+
+/* ----------------------------------------
+   Empty State Icon
+---------------------------------------- */
+
+.empty-icon,
+.bottom-empty-icon {
+  transition:
+    transform 0.3s ease;
+}
+
+.empty-state:hover .empty-icon,
+.bottom-empty-state:hover .bottom-empty-icon {
+  transform: scale(1.08);
+}
+
+
+/* ========================================
+   KEYFRAMES
+======================================== */
+
+@keyframes dashboardPageReveal {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes dashboardHeaderReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes dashboardStatsReveal {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes dashboardCardReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+@keyframes dashboardSectionReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+@keyframes quickAccessReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .dashboard-animate-page,
+  .dashboard-animate-header,
+  .dashboard-animate-stats,
+  .dashboard-stat-card-1,
+  .dashboard-stat-card-2,
+  .dashboard-stat-card-3,
+  .dashboard-stat-card-4,
+  .dashboard-animate-middle,
+  .dashboard-content-card-1,
+  .dashboard-content-card-2,
+  .dashboard-animate-lower,
+  .dashboard-content-card-3,
+  .dashboard-content-card-4,
+  .dashboard-animate-quick,
+  .quick-access-animated {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+
+}
+/* ================================
+   STAT CARDS ENTRANCE ANIMATION
+================================ */
+
+.stats-grid .stat-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: dashboardStatCardIn 0.7s ease forwards;
+}
+
+.stats-grid .stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stats-grid .stat-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stats-grid .stat-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stats-grid .stat-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dashboardStatCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================================
+   ATTENDANCE CARD ENTRANCE ANIMATION
+================================ */
+
+.dashboard-middle .dashboard-card:first-child {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: attendanceCardIn 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes attendanceCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================================
+   ANNOUNCEMENTS CARD ANIMATION
+================================ */
+
+.dashboard-middle .dashboard-card:nth-child(2) {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: announcementsCardIn 0.8s ease forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes announcementsCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================================
+   UPCOMING CLASSES ANIMATION
+================================ */
+
+.dashboard-bottom .dashboard-card:first-child {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: upcomingClassesIn 0.8s ease forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes upcomingClassesIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================================
+   PENDING ASSIGNMENTS ANIMATION
+================================ */
+
+.dashboard-bottom .dashboard-card:nth-child(2) {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: pendingAssignmentsIn 0.8s ease forwards;
+  animation-delay: 1.1s;
+}
+
+@keyframes pendingAssignmentsIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================================
+   QUICK ACCESS ANIMATION
+================================ */
+
+.quick-access {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: quickAccessIn 0.8s ease forwards;
+  animation-delay: 1.3s;
+}
+
+@keyframes quickAccessIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   DASHBOARD STAT CARDS HOVER
+======================================== */
+
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   DASHBOARD MIDDLE CARDS HOVER
+======================================== */
+
+.dashboard-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   QUICK ACCESS CARDS HOVER
+======================================== */
+
+.quick-access-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.quick-access-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}

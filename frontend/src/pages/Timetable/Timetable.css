@@ -1,0 +1,862 @@
+/* ========================================
+   Timetable Page
+======================================== */
+
+.timetable-page {
+  width: 100%;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.timetable-header {
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timetable-header h1 {
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.timetable-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.timetable-header-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 11px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   Common Card
+======================================== */
+
+.timetable-card {
+  margin-bottom: 20px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   Card Header
+======================================== */
+
+.timetable-card-header {
+  margin-bottom: 24px;
+}
+
+.timetable-title {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.timetable-title-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timetable-title-icon.blue {
+  background: #ebf4ff;
+  color: #2f80ed;
+}
+
+.timetable-title h3 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.timetable-title p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   Empty State
+======================================== */
+
+.timetable-empty {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.timetable-empty-icon {
+  width: 58px;
+  height: 58px;
+
+  margin-bottom: 14px;
+
+  border-radius: 50%;
+
+  background: #f3f1ff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timetable-empty h4 {
+  margin: 0 0 6px;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timetable-empty p {
+  max-width: 380px;
+
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Weekly Timetable
+======================================== */
+
+.weekly-timetable {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(150px, 1fr));
+
+  gap: 12px;
+
+  overflow-x: auto;
+}
+
+
+/* ========================================
+   Day Column
+======================================== */
+
+.day-column {
+  min-width: 150px;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: #fafbfc;
+}
+
+
+/* ========================================
+   Day Header
+======================================== */
+
+.day-header {
+  min-height: 46px;
+
+  padding: 12px;
+
+  background: #f6f5ff;
+
+  border-bottom: 1px solid #ebe9f8;
+
+  color: #5545dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   Day Classes
+======================================== */
+
+.day-classes {
+  min-height: 210px;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+/* ========================================
+   Class Card
+======================================== */
+
+.class-card {
+  padding: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.class-card h4 {
+  margin: 0 0 10px;
+
+  color: #172033;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   Class Card Top
+======================================== */
+
+.class-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 7px;
+
+  margin-bottom: 10px;
+}
+
+.class-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-time {
+  color: #667085;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  text-align: right;
+}
+
+
+/* ========================================
+   Class Details
+======================================== */
+
+.class-detail {
+  margin-top: 7px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #7b8495;
+
+  font-size: 10px;
+}
+
+.class-detail svg {
+  flex-shrink: 0;
+
+  color: #8b7ff0;
+}
+
+
+/* ========================================
+   No Class
+======================================== */
+
+.no-class {
+  min-height: 170px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #a0a8b5;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.no-class svg {
+  color: #c2c8d2;
+}
+
+
+/* ========================================
+   Daily Schedule
+======================================== */
+
+.daily-schedule-card {
+  margin-top: 20px;
+}
+
+.daily-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+/* ========================================
+   Daily Class
+======================================== */
+
+.daily-class {
+  min-height: 76px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+
+/* ========================================
+   Daily Time
+======================================== */
+
+.daily-time {
+  min-width: 90px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.daily-time strong {
+  color: #172033;
+
+  font-size: 13px;
+}
+
+.daily-time span {
+  color: #98a2b3;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Divider
+======================================== */
+
+.daily-divider {
+  width: 1px;
+  height: 38px;
+
+  background: #e7eaf0;
+}
+
+
+/* ========================================
+   Daily Class Info
+======================================== */
+
+.daily-class-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.daily-class-info h4 {
+  margin: 0 0 8px;
+
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.daily-details {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.daily-details span {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #7b8495;
+
+  font-size: 11px;
+}
+
+.daily-details svg {
+  color: #6657e8;
+}
+
+
+/* ========================================
+   Daily Empty State
+======================================== */
+
+.daily-empty {
+  min-height: 180px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.daily-empty-icon {
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #ebf4ff;
+
+  color: #2f80ed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.daily-empty h4 {
+  margin: 0 0 5px;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.daily-empty p {
+  max-width: 380px;
+
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 1200px) {
+
+  .weekly-timetable {
+    grid-template-columns:
+      repeat(3, minmax(180px, 1fr));
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .weekly-timetable {
+    grid-template-columns:
+      repeat(2, minmax(180px, 1fr));
+  }
+
+  .timetable-header h1 {
+    font-size: 23px;
+  }
+
+  .daily-class {
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .weekly-timetable {
+    grid-template-columns:
+      1fr;
+  }
+
+  .day-column {
+    min-width: 100%;
+  }
+
+  .timetable-card {
+    padding: 16px;
+  }
+
+  .daily-class {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .daily-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .daily-time {
+    min-width: 100%;
+  }
+
+  .daily-details {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 7px;
+  }
+
+}
+
+
+/* ========================================
+   TIMETABLE PAGE ENTRANCE
+======================================== */
+
+.timetable-page {
+  animation: timetablePageIn 0.7s ease forwards;
+}
+
+@keyframes timetablePageIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ========================================
+   WEEKLY TIMETABLE CARD ENTRANCE
+======================================== */
+
+.timetable-page > .timetable-card:not(.daily-schedule-card) {
+  opacity: 0;
+  transform: translateY(25px);
+
+  animation: weeklyTimetableCardIn 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes weeklyTimetableCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ========================================
+   TIMETABLE DAY COLUMNS ENTRANCE
+======================================== */
+
+.day-column {
+  opacity: 0;
+  transform: translateY(20px);
+
+  animation: dayColumnIn 0.6s ease forwards;
+}
+
+.day-column:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.day-column:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.day-column:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.day-column:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.day-column:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+.day-column:nth-child(6) {
+  animation-delay: 1s;
+}
+
+@keyframes dayColumnIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ========================================
+   WEEKLY TIMETABLE CARD HOVER
+======================================== */
+
+.timetable-page > .timetable-card:not(.daily-schedule-card) {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.timetable-page > .timetable-card:not(.daily-schedule-card):hover {
+  transform: translateY(-5px) !important;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+
+/* ========================================
+   INDIVIDUAL CLASS CARDS ENTRANCE
+======================================== */
+
+.class-card {
+  opacity: 0;
+  transform: translateY(15px);
+
+  animation: classCardIn 0.5s ease forwards;
+}
+
+.class-card:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.class-card:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.class-card:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.class-card:nth-child(4) {
+  animation-delay: 1.1s;
+}
+
+.class-card:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+@keyframes classCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ========================================
+   INDIVIDUAL CLASS CARD HOVER
+======================================== */
+
+.class-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.class-card:hover {
+  transform: translateY(-5px) !important;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+
+/* ========================================
+   DAILY SCHEDULE CARD ENTRANCE
+======================================== */
+
+.daily-schedule-card {
+  opacity: 0;
+  transform: translateY(25px);
+
+  animation: dailyScheduleCardIn 0.8s ease forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes dailyScheduleCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ========================================
+   DAILY SCHEDULE CLASS HOVER
+======================================== */
+
+.daily-class {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.daily-class:hover {
+  transform: translateX(5px) !important;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+
+
+/* ========================================
+   DAILY SCHEDULE CARD HOVER
+======================================== */
+
+.daily-schedule-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.daily-schedule-card:hover {
+  transform: translateY(-5px) !important;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}

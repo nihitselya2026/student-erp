@@ -1,0 +1,893 @@
+/* ========================================
+   Attendance Page
+======================================== */
+
+.attendance-page {
+  width: 100%;
+}
+
+
+/* ========================================
+   Page Header
+======================================== */
+
+.attendance-page-header {
+  margin-bottom: 24px;
+}
+
+.attendance-page-header h1 {
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.attendance-page-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   Attendance Summary
+======================================== */
+
+.attendance-summary {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.attendance-summary-card {
+  min-height: 110px;
+
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.attendance-summary-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+}
+
+
+/* ========================================
+   Summary Icons
+======================================== */
+
+.attendance-summary-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overall-attendance-icon {
+  color: #6657e8;
+  background: #efedff;
+}
+
+.total-classes-icon {
+  color: #2f80ed;
+  background: #ebf4ff;
+}
+
+.present-classes-icon {
+  color: #20a464;
+  background: #e9f9f1;
+}
+
+.absent-classes-icon {
+  color: #f59b45;
+  background: #fff4e5;
+}
+
+
+/* ========================================
+   Summary Content
+======================================== */
+
+.attendance-summary-content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.attendance-summary-content span {
+  color: #667085;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.attendance-summary-content strong {
+  color: #172033;
+
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.attendance-summary-content small {
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+
+/* ========================================
+   Main Attendance Card
+======================================== */
+
+.attendance-main-card {
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+
+  padding: 22px;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   Card Header
+======================================== */
+
+.attendance-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.attendance-card-header h3 {
+  margin: 0 0 5px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.attendance-card-header p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Main Attendance Content
+======================================== */
+
+.attendance-main-content {
+  min-height: 190px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 70px;
+}
+
+
+/* ========================================
+   Large Attendance Circle
+======================================== */
+
+.attendance-large-circle {
+  width: 165px;
+  height: 165px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #22b573 0deg,
+    #22b573 0deg,
+    #e9eef4 0deg,
+    #e9eef4 360deg
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.attendance-large-circle-inner {
+  width: 128px;
+  height: 128px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.attendance-large-circle-inner strong {
+  color: #172033;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.attendance-large-circle-inner span {
+  margin-top: 4px;
+
+  color: #8a94a6;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Main Attendance Details
+======================================== */
+
+.attendance-main-details {
+  width: 360px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+
+/* ========================================
+   Progress Information
+======================================== */
+
+.attendance-progress-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.attendance-progress-info > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attendance-progress-info span {
+  color: #667085;
+
+  font-size: 12px;
+}
+
+.attendance-progress-info strong {
+  color: #172033;
+
+  font-size: 13px;
+}
+
+
+/* ========================================
+   Progress Bar
+======================================== */
+
+.attendance-progress {
+  width: 100%;
+  height: 8px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #edf1f5;
+}
+
+.attendance-progress-fill {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #22b573;
+
+  transition: width 0.4s ease;
+}
+
+
+/* ========================================
+   Attendance Counts
+======================================== */
+
+.attendance-count-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.attendance-count-row > div {
+  padding: 13px;
+
+  border: 1px solid #f0f2f5;
+  border-radius: 9px;
+
+  background: #fafbfc;
+
+  display: grid;
+
+  grid-template-columns: 8px 1fr auto;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.attendance-count-row span {
+  color: #697386;
+
+  font-size: 11px;
+}
+
+.attendance-count-row strong {
+  color: #172033;
+
+  font-size: 13px;
+}
+
+.attendance-count-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+}
+
+.present-count-dot {
+  background: #22b573;
+}
+
+.absent-count-dot {
+  background: #f59b45;
+}
+
+
+/* ========================================
+   Subject Attendance Table
+======================================== */
+
+.subject-attendance-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.subject-attendance-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 720px;
+}
+
+.subject-attendance-table th {
+  padding: 12px 14px;
+
+  background: #f8f9fb;
+
+  border-bottom: 1px solid #edf0f5;
+
+  color: #667085;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+.subject-attendance-table td {
+  padding: 15px 14px;
+
+  border-bottom: 1px solid #f0f2f5;
+
+  color: #667085;
+
+  font-size: 12px;
+}
+
+.subject-attendance-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.subject-attendance-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.subject-attendance-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+
+/* ========================================
+   Subject Name
+======================================== */
+
+.subject-name {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #344054;
+
+  font-weight: 600;
+}
+
+.subject-icon {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #efedff;
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subject-attendance-table td strong {
+  color: #172033;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   Attendance Status
+======================================== */
+
+.attendance-status {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 65px;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.attendance-status.good {
+  color: #168653;
+
+  background: #e9f9f1;
+}
+
+.attendance-status.warning {
+  color: #b7791f;
+
+  background: #fff4df;
+}
+
+.attendance-status.low {
+  color: #d04b4b;
+
+  background: #fff0f0;
+}
+
+
+/* ========================================
+   Empty State
+======================================== */
+
+.attendance-empty-state {
+  min-height: 210px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.attendance-empty-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #f3f1ff;
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendance-empty-state h4 {
+  margin: 0 0 5px;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.attendance-empty-state p {
+  max-width: 360px;
+
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   Monthly / Semester Empty State
+======================================== */
+
+.attendance-period-empty {
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.attendance-period-icon {
+  width: 44px;
+  height: 44px;
+
+  margin-bottom: 10px;
+
+  border-radius: 50%;
+
+  background: #ebf4ff;
+  color: #2f80ed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendance-period-empty h4 {
+  margin: 0 0 5px;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.attendance-period-empty p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 1100px) {
+
+  .attendance-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .attendance-main-content {
+    gap: 45px;
+  }
+
+  .attendance-main-details {
+    width: 320px;
+  }
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 700px) {
+
+  .attendance-page-header h1 {
+    font-size: 23px;
+  }
+
+  .attendance-page-header p {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+
+  .attendance-summary {
+    grid-template-columns: 1fr;
+  }
+
+
+  .attendance-main-card {
+    padding: 18px;
+  }
+
+
+  .attendance-main-content {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .attendance-main-details {
+    width: 100%;
+  }
+
+
+  .attendance-count-row {
+    grid-template-columns: 1fr;
+  }
+
+
+  .attendance-card-header {
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+
+}
+
+
+/* ========================================
+   Small Mobile
+======================================== */
+
+@media (max-width: 420px) {
+
+  .attendance-summary-card {
+    padding: 15px;
+  }
+
+  .attendance-summary-content strong {
+    font-size: 21px;
+  }
+
+  .attendance-large-circle {
+    width: 145px;
+    height: 145px;
+  }
+
+  .attendance-large-circle-inner {
+    width: 112px;
+    height: 112px;
+  }
+
+  .attendance-large-circle-inner strong {
+    font-size: 24px;
+  }
+
+  .attendance-card-header h3 {
+    font-size: 14px;
+  }
+
+  .attendance-card-header p {
+    font-size: 10px;
+  }
+}
+/* ========================================
+   ATTENDANCE PAGE ENTRANCE ANIMATION
+======================================== */
+
+.attendance-page {
+  animation: attendancePageIn 0.7s ease forwards;
+}
+
+@keyframes attendancePageIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   ATTENDANCE SUMMARY CARDS ANIMATION
+======================================== */
+
+.attendance-summary-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: attendanceSummaryCardIn 0.7s ease forwards;
+}
+
+.attendance-summary-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.attendance-summary-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.attendance-summary-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.attendance-summary-card:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+@keyframes attendanceSummaryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   ATTENDANCE SUMMARY CARDS HOVER
+======================================== */
+
+.attendance-summary-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attendance-summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   ATTENDANCE SUMMARY HOVER FIX
+======================================== */
+
+.attendance-summary-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.attendance-summary-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   OVERALL ATTENDANCE CARD HOVER
+======================================== */
+
+.attendance-main-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attendance-main-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   LARGE ATTENDANCE CIRCLE ANIMATION
+======================================== */
+
+.attendance-large-circle {
+  opacity: 0;
+  transform: scale(0.85);
+  animation: attendanceCircleIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes attendanceCircleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ========================================
+   SUBJECT TABLE ROW HOVER
+======================================== */
+
+.subject-attendance-table tbody tr {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.subject-attendance-table tbody tr:hover {
+  transform: translateX(4px);
+  background-color: #f7faff;
+}
+/* ========================================
+   SUBJECT ICON HOVER ANIMATION
+======================================== */
+
+.subject-attendance-table tbody tr:hover .subject-icon {
+  transform: scale(1.12) rotate(-4deg);
+  transition: transform 0.3s ease;
+}
+/* ========================================
+   ATTENDANCE STATUS HOVER
+======================================== */
+
+.attendance-status {
+  display: inline-block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.attendance-status:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}

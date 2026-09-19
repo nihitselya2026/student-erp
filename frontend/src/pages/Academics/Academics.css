@@ -1,0 +1,610 @@
+.academics-page {
+  width: 100%;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.academics-header {
+  margin-bottom: 24px;
+}
+
+.academics-header h1 {
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.academics-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   Academic Summary
+======================================== */
+
+.academic-summary {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.academic-summary-card {
+  min-height: 112px;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.academic-summary-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.academic-summary-icon.semester {
+  color: #6657e8;
+  background: #efedff;
+}
+
+.academic-summary-icon.sgpa {
+  color: #2f80ed;
+  background: #ebf4ff;
+}
+
+.academic-summary-icon.cgpa {
+  color: #1fa971;
+  background: #e9f9f2;
+}
+
+.academic-summary-card > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.academic-summary-card span {
+  color: #667085;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.academic-summary-card strong {
+  color: #111827;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   Common Card
+======================================== */
+
+.academics-card {
+  margin-bottom: 20px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.academics-card-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.academics-card-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+}
+
+.academics-title-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 9px;
+
+  background: #efedff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.academics-title-icon.result-icon {
+  background: #ebf4ff;
+
+  color: #2f80ed;
+}
+
+.academics-card-title h3 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.academics-card-title p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   Subjects Table
+======================================== */
+
+.subjects-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.subjects-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 700px;
+}
+
+.subjects-table th {
+  padding: 13px 14px;
+
+  background: #f8f9fc;
+
+  color: #667085;
+
+  text-align: left;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border-bottom: 1px solid #edf0f5;
+}
+
+.subjects-table td {
+  padding: 15px 14px;
+
+  color: #344054;
+
+  font-size: 13px;
+
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.subjects-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.subjects-table tbody tr:hover {
+  background: #fafaff;
+}
+
+
+/* ========================================
+   Semester Results
+======================================== */
+
+.semester-results {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.semester-result-row {
+  min-height: 65px;
+
+  padding: 12px 10px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1fr;
+
+  align-items: center;
+
+  border-bottom: 1px solid #edf0f5;
+}
+
+.semester-result-row:last-child {
+  border-bottom: none;
+}
+
+.semester-result-row > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.semester-result-row span {
+  color: #8a94a6;
+
+  font-size: 11px;
+}
+
+.semester-result-row strong {
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.semester-result-name strong {
+  color: #5545dc;
+}
+
+
+/* ========================================
+   Empty State
+======================================== */
+
+.academics-empty-state {
+  min-height: 180px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.academics-empty-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #f3f1ff;
+
+  color: #6657e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-empty-icon {
+  background: #ebf4ff;
+
+  color: #2f80ed;
+}
+
+.academics-empty-state h4 {
+  margin: 0 0 5px;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.academics-empty-state p {
+  max-width: 360px;
+
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 1000px) {
+  .academic-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .academics-header h1 {
+    font-size: 23px;
+  }
+
+  .academics-card {
+    padding: 17px;
+  }
+
+  .semester-result-row {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+  }
+}
+/* ========================================
+   ACADEMICS PAGE ENTRANCE
+======================================== */
+
+.academics-page {
+  animation: academicsPageIn 0.7s ease forwards;
+}
+
+@keyframes academicsPageIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   ACADEMIC SUMMARY CARDS ENTRANCE
+======================================== */
+
+.academic-summary-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: academicSummaryCardIn 0.7s ease forwards;
+}
+
+.academic-summary-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.academic-summary-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.academic-summary-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes academicSummaryCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   ACADEMICS MAIN CARDS ENTRANCE
+======================================== */
+
+.academics-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: academicsCardIn 0.8s ease forwards;
+}
+
+.academics-card:nth-of-type(1) {
+  animation-delay: 0.6s;
+}
+
+.academics-card:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+
+@keyframes academicsCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   SUBJECT TABLE ROWS ENTRANCE
+======================================== */
+
+.subjects-table tbody tr {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: subjectRowIn 0.5s ease forwards;
+}
+
+.subjects-table tbody tr:nth-child(1) {
+  animation-delay: 0.9s;
+}
+
+.subjects-table tbody tr:nth-child(2) {
+  animation-delay: 1.0s;
+}
+
+.subjects-table tbody tr:nth-child(3) {
+  animation-delay: 1.1s;
+}
+
+.subjects-table tbody tr:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.subjects-table tbody tr:nth-child(5) {
+  animation-delay: 1.3s;
+}
+
+.subjects-table tbody tr:nth-child(6) {
+  animation-delay: 1.4s;
+}
+
+@keyframes subjectRowIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ========================================
+   SEMESTER RESULTS ROWS ENTRANCE
+======================================== */
+
+.semester-result-row {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: semesterResultRowIn 0.5s ease forwards;
+}
+
+.semester-result-row:nth-child(1) {
+  animation-delay: 1.0s;
+}
+
+.semester-result-row:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.semester-result-row:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.semester-result-row:nth-child(4) {
+  animation-delay: 1.3s;
+}
+
+.semester-result-row:nth-child(5) {
+  animation-delay: 1.4s;
+}
+
+.semester-result-row:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+@keyframes semesterResultRowIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ========================================
+   ACADEMIC SUMMARY CARDS HOVER
+======================================== */
+
+.academic-summary-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.academic-summary-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   ACADEMICS MAIN CARDS HOVER
+======================================== */
+
+.academics-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.academics-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   SUBJECT TABLE ROW HOVER
+======================================== */
+
+.subjects-table tbody tr td {
+  transition: background-color 0.25s ease,
+              transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.subjects-table tbody tr:hover td {
+  background-color: #f7faff;
+  transform: translateY(-2px);
+}
+/* ========================================
+   SEMESTER RESULTS ROW HOVER
+======================================== */
+
+.semester-result-row {
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.semester-result-row:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,1406 @@
+/* ========================================
+   Settings Page
+======================================== */
+
+.settings-page {
+  width: 100%;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.settings-header {
+  margin-bottom: 24px;
+}
+
+.settings-header h1 {
+  margin: 0 0 6px;
+
+  color: #14213d;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.settings-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   Grid
+======================================== */
+
+.settings-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* ========================================
+   Card
+======================================== */
+
+.settings-card {
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   Card Header
+======================================== */
+
+.settings-card-header {
+  margin-bottom: 22px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.settings-card-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-icon {
+  background: #efedff;
+  color: #6657e8;
+}
+
+.notification-settings-icon {
+  background: #ebf4ff;
+  color: #2f80ed;
+}
+
+.appearance-icon {
+  background: #fff5df;
+  color: #f59e0b;
+}
+
+.security-icon {
+  background: #e9f9f2;
+  color: #1fa971;
+}
+
+.settings-card-header h3 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.settings-card-header p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Form
+======================================== */
+
+.settings-form-group {
+  margin-bottom: 16px;
+}
+
+.settings-form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.settings-form-group label span {
+  margin-left: 3px;
+
+  color: #e05252;
+}
+
+
+/* ========================================
+   Password Input
+======================================== */
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  padding: 0 42px 0 12px;
+
+  border: 1px solid #dfe3ea;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #172033;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.password-input-wrapper input:focus {
+  border-color: #6657e8;
+
+  box-shadow:
+    0 0 0 3px rgba(102, 87, 232, 0.09);
+}
+
+.password-input-wrapper input::placeholder {
+  color: #a0a8b5;
+}
+
+.password-input-wrapper button {
+  position: absolute;
+
+  right: 8px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 30px;
+  height: 30px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #98a2b3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.password-input-wrapper button:hover {
+  color: #6657e8;
+}
+
+
+/* ========================================
+   Save Button
+======================================== */
+
+.settings-save-button {
+  width: 100%;
+  height: 40px;
+
+  margin-top: 3px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #6657e8;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.settings-save-button:hover {
+  background: #5545dc;
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   Notification Settings
+======================================== */
+
+.notification-settings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-setting-item {
+  min-height: 65px;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #edf0f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.notification-setting-item:first-child {
+  padding-top: 0;
+}
+
+.notification-setting-item:last-child {
+  padding-bottom: 0;
+
+  border-bottom: none;
+}
+
+.notification-setting-info {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.notification-setting-small-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #f5f6f8;
+
+  color: #667085;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-setting-info h4 {
+  margin: 0 0 3px;
+
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.notification-setting-info p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   Toggle
+======================================== */
+
+.settings-toggle {
+  width: 38px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  padding: 2px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: #dfe3ea;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.settings-toggle span {
+  display: block;
+
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 1px 3px rgba(15, 23, 42, 0.18);
+
+  transition: transform 0.2s ease;
+}
+
+.settings-toggle.active {
+  background: #6657e8;
+}
+
+.settings-toggle.active span {
+  transform: translateX(17px);
+}
+
+
+/* ========================================
+   Appearance
+======================================== */
+
+.appearance-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.appearance-option {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.appearance-preview {
+  width: 76px;
+  height: 52px;
+
+  overflow: hidden;
+
+  border: 1px solid #dfe3ea;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+.preview-top {
+  height: 11px;
+
+  background: #f2f0ff;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.preview-body {
+  padding: 6px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.preview-body div {
+  height: 5px;
+
+  border-radius: 2px;
+
+  background: #e9ebf0;
+}
+
+.preview-body div:nth-child(1) {
+  width: 75%;
+}
+
+.preview-body div:nth-child(2) {
+  width: 55%;
+}
+
+.preview-body div:nth-child(3) {
+  width: 65%;
+}
+
+.appearance-option h4 {
+  margin: 0 0 4px;
+
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.appearance-option p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+.appearance-info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 5px;
+}
+
+.appearance-status {
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+.appearance-info strong {
+  color: #5545dc;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   Security
+======================================== */
+
+.security-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.security-item {
+  padding: 13px;
+
+  border: 1px solid #edf0f5;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.security-item-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #e9f9f2;
+
+  color: #1fa971;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.security-item h4 {
+  margin: 0 0 4px;
+
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.security-item p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 950px) {
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .settings-header h1 {
+    font-size: 23px;
+  }
+
+  .settings-card {
+    padding: 17px;
+  }
+
+  .appearance-content {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .appearance-info {
+    align-items: flex-start;
+  }
+
+}
+
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+
+/* ========================================
+   Step 1 — Settings Page Entrance
+======================================== */
+
+.settings-page {
+  animation: settingsPageIn 0.7s ease forwards;
+}
+
+@keyframes settingsPageIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ========================================
+   Step 2 — Major Cards Entrance
+======================================== */
+
+.settings-card {
+  opacity: 0;
+
+  transform: translateY(18px);
+
+  animation: settingsCardIn 0.7s ease forwards;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.settings-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.settings-card:nth-child(2) {
+  animation-delay: 0.45s;
+}
+
+.settings-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.settings-card:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+@keyframes settingsCardIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ========================================
+   Step 3 — Major Cards Hover
+======================================== */
+
+.settings-card:hover {
+  transform: translateY(-5px) !important;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.10) !important;
+}
+
+
+/* ========================================
+   Step 4 — Card Header Entrance
+======================================== */
+
+.settings-card-header {
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  animation: settingsCardHeaderIn 0.6s ease forwards;
+
+  animation-delay: 0.85s;
+}
+
+@keyframes settingsCardHeaderIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ========================================
+   Step 5 — Card Header Icon Hover
+======================================== */
+
+.settings-card-icon {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.settings-card-icon:hover {
+  transform: scale(1.1) rotate(-4deg);
+
+  box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   Step 6 — Change Password Form Entrance
+======================================== */
+
+.settings-form-group {
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  animation: settingsFormGroupIn 0.5s ease forwards;
+}
+
+.settings-form-group:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.settings-form-group:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.settings-form-group:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+@keyframes settingsFormGroupIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.settings-save-button {
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  animation: settingsSaveButtonIn 0.5s ease forwards;
+
+  animation-delay: 1.3s;
+}
+
+@keyframes settingsSaveButtonIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+/* ========================================
+   Step 7 — Password Input Hover
+======================================== */
+
+.password-input-wrapper {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.password-input-wrapper:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.06);
+}
+/* ========================================
+   Step 8 — Password Eye Icon Hover
+======================================== */
+
+.password-input-wrapper button {
+  transition:
+    transform 0.25s ease,
+    color 0.2s ease;
+}
+
+.password-input-wrapper button:hover {
+  transform: translateY(-50%) scale(1.1);
+  color: #6657e8;
+}
+/* ========================================
+   Step 9 — Update Password Button Hover
+======================================== */
+
+.settings-save-button {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.2s ease;
+}
+
+.settings-save-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 7px 16px rgba(0, 0, 0, 0.10);
+
+  background: #5545dc;
+}
+
+.settings-save-button:active {
+  transform: translateY(0) scale(0.98);
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   Step 10 — Notification Setting Items Entrance
+======================================== */
+
+.notification-setting-item {
+  opacity: 0;
+  transform: translateY(10px);
+
+  animation: notificationSettingItemIn 0.5s ease forwards;
+}
+
+.notification-setting-item:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.notification-setting-item:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.notification-setting-item:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.notification-setting-item:nth-child(4) {
+  animation-delay: 1.3s;
+}
+
+@keyframes notificationSettingItemIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   Step 11 — Notification Setting Item Hover
+======================================== */
+
+.notification-setting-item {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.notification-setting-item:hover {
+  transform: translateX(5px) !important;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   Step 12 — Notification Toggle Hover
+======================================== */
+
+.settings-toggle {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.settings-toggle:hover {
+  transform: scale(1.06);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   Step 13 — Appearance Options Entrance
+======================================== */
+
+.appearance-option {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: appearanceOptionIn 0.5s ease forwards;
+}
+
+.appearance-option:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.appearance-option:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+@keyframes appearanceOptionIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   Step 28 — Appearance Option Hover Fix
+======================================== */
+
+.appearance-option {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.appearance-option:hover {
+  transform: translateX(5px) !important;
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   Step 15 — Appearance Preview Hover
+======================================== */
+
+.appearance-preview {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.appearance-preview:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   Step 16 — Security Items Entrance
+======================================== */
+
+.security-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: securityItemIn 0.5s ease forwards;
+}
+
+.security-item:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.security-item:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.security-item:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+@keyframes securityItemIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   Step 17 — Security Item Hover
+======================================== */
+
+.security-item {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.security-item:hover {
+  transform: translateX(5px) !important;
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   Step 18 — Security Item Icon Hover
+======================================== */
+
+.security-item-icon {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.security-item:hover .security-item-icon {
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   Step 19 — Security Content Hover
+======================================== */
+
+.security-item:hover .security-item-content {
+  transform: translateX(3px);
+  transition: transform 0.25s ease;
+}
+/* ========================================
+   Step 20 — Settings Header Entrance
+======================================== */
+
+.settings-header {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: settingsHeaderIn 0.6s ease forwards;
+  animation-delay: 0.15s;
+}
+
+@keyframes settingsHeaderIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   Step 21 — Settings Header Hover Fix
+======================================== */
+
+.settings-header {
+  transition:
+    box-shadow 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+.settings-header:hover {
+  padding-left: 5px;
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.06);
+}
+/* ========================================
+   Step 22 — Settings Header Title Hover
+======================================== */
+
+.settings-header h1 {
+  transition:
+    transform 0.25s ease,
+    text-shadow 0.25s ease;
+}
+
+.settings-header:hover h1 {
+  transform: translateX(3px);
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   Step 23 — Settings Card Header Hover
+======================================== */
+
+.settings-card:hover .settings-card-header {
+  transform: translateX(3px);
+  transition: transform 0.25s ease;
+}
+/* ========================================
+   Step 24 — Save Button Icon Hover
+======================================== */
+
+.settings-save-button svg {
+  transition:
+    transform 0.25s ease;
+}
+
+.settings-save-button:hover svg {
+  transform: scale(1.1) rotate(-4deg);
+}
+/* ========================================
+   Step 24 — Save Button Icon Hover Fix
+======================================== */
+
+.settings-save-button svg {
+  display: inline-block;
+  transition:
+    transform 0.25s ease;
+}
+
+.settings-save-button:hover svg {
+  transform: scale(1.1) rotate(-10deg) !important;
+}
+/* ========================================
+   Step 25 — Settings Form Group Hover
+======================================== */
+
+.settings-form-group {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.settings-form-group:hover {
+  transform: translateX(3px);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+/* ========================================
+   Step 26 — Password Input Focus
+======================================== */
+
+.password-input-wrapper:focus-within {
+  transform: translateY(-2px);
+  box-shadow:
+    0 7px 18px rgba(102, 87, 232, 0.12);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+/* ========================================
+   Step 27 — Notification Small Icon Hover
+======================================== */
+
+.notification-setting-small-icon {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.notification-setting-item:hover .notification-setting-small-icon {
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   Step 28 — Appearance Status Hover
+======================================== */
+
+.appearance-status {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.appearance-status:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   Step 29 — Appearance Preview Entrance
+======================================== */
+
+.appearance-preview {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: appearancePreviewIn 0.5s ease forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes appearancePreviewIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   Step 30 — Security Item Icon Entrance
+======================================== */
+
+.security-item-icon {
+  opacity: 0;
+  transform: scale(0.85);
+  animation: securityIconIn 0.45s ease forwards;
+}
+
+.security-item:nth-child(1) .security-item-icon {
+  animation-delay: 1.25s;
+}
+
+.security-item:nth-child(2) .security-item-icon {
+  animation-delay: 1.35s;
+}
+
+@keyframes securityIconIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ========================================
+   Step 31 — Appearance Info Hover
+======================================== */
+
+.appearance-info {
+  transition:
+    transform 0.25s ease;
+}
+
+.appearance-option:hover .appearance-info {
+  transform: translateX(3px);
+}
+/* ========================================
+   Step 32 — Settings Card Icon Entrance
+======================================== */
+
+.settings-card-icon {
+  opacity: 0;
+  transform: scale(0.85);
+  animation: settingsCardIconIn 0.45s ease forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes settingsCardIconIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ========================================
+   Step 33 — Settings Card Icon Hover Fix
+======================================== */
+
+.settings-card-icon {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.settings-card:hover .settings-card-icon {
+  transform: scale(1.1) rotate(-4deg) !important;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.08) !important;
+}
+/* ========================================
+   Step 34 — Card Header Combined Hover
+======================================== */
+
+.settings-card:hover .settings-card-header h3 {
+  transform: translateX(3px);
+  transition: transform 0.25s ease;
+}
+/* ========================================
+   Step 35 — Settings Card Content Entrance
+======================================== */
+
+.settings-card > *:not(.settings-card-header) {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: settingsCardContentIn 0.5s ease forwards;
+  animation-delay: 1.1s;
+}
+
+@keyframes settingsCardContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   Step 36 — Settings Card Content Hover
+======================================== */
+
+.settings-card:hover > *:not(.settings-card-header) {
+  transform: translateY(-2px);
+}
+/* ========================================
+   Step 37 — Security Content Entrance
+======================================== */
+
+.security-item-content {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: securityContentIn 0.45s ease forwards;
+}
+
+.security-item:nth-child(1) .security-item-content {
+  animation-delay: 1.45s;
+}
+
+.security-item:nth-child(2) .security-item-content {
+  animation-delay: 1.55s;
+}
+
+@keyframes securityContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================
+   Step 38 — Security Content Hover Fix
+======================================== */
+
+.security-item-content {
+  transition:
+    transform 0.25s ease !important;
+}
+
+.security-item:hover .security-item-content {
+  transform: translateX(3px) !important;
+}
+/* ========================================
+   Step 39 — Security Item Overall Hover Polish
+======================================== */
+
+.security-item:hover {
+  background-color: rgba(102, 87, 232, 0.025);
+}
+/* ========================================
+   Step 40 — Reduced Motion Support
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .settings-page,
+  .settings-header,
+  .settings-card,
+  .settings-card-icon,
+  .settings-form-group,
+  .notification-setting-item,
+  .appearance-option,
+  .appearance-preview,
+  .security-item,
+  .security-item-icon,
+  .security-item-content {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
